@@ -5,10 +5,10 @@ public partial class button : Button
 {
     public override void _Ready()
     {
-        Pressed += OnButtonPressed;
+        Pressed += _OnButtonPressed;
     }
 
-    private void OnButtonPressed()
+    private void _OnButtonPressed()
     {
         GD.Print("uwu");
     }
