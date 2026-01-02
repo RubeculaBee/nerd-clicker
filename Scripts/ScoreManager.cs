@@ -11,7 +11,7 @@ public partial class ScoreManager : Label
         Text = $"Points: {points}"; 
     }
 
-    public void _OnButtonPressed()
+    public void OnButtonPressed()
     {
         points++;
         Text = $"Points: {points}";
