@@ -10,6 +10,6 @@ public partial class GameManager : Node
         Button button = GetNode<Button>("ClickerButton");
         ScoreManager points = GetNode<ScoreManager>("Points");
 
-        button.Pressed += points.OnButtonPressed;
+        button.Pressed += points._OnButtonPressed;
     }
 }
