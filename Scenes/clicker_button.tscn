@@ -1,0 +1,24 @@
+[gd_scene load_steps=8 format=3 uid="uid://i62fyufc57ik"]
+
+[ext_resource type="Texture2D" uid="uid://b4rjm07q6s7jc" path="res://icon.svg" id="1_qau18"]
+[ext_resource type="Script" uid="uid://bqt3k21vysvt2" path="res://Scripts/button.cs" id="2_db7pa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qau18"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_db7pa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eiqog"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yea1c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4gxbt"]
+
+[node name="ClickerButton" type="Button"]
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qau18")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_db7pa")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_eiqog")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_yea1c")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4gxbt")
+action_mode = 0
+icon = ExtResource("1_qau18")
+script = ExtResource("2_db7pa")
