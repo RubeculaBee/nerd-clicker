@@ -1,16 +1,14 @@
 using Godot;
 using System;
 
-public partial class button : Node
+public partial class button : Button
 {
     public override void _Ready()
     {
-        Connect(Button.SignalName.Pressed, Callable.From(ButtonPressed));
-
-        
+        Pressed += OnButtonPressed;
     }
 
-    private void ButtonPressed()
+    private void OnButtonPressed()
     {
         GD.Print("uwu");
     }
