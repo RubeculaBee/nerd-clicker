@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://i62fyufc57ik"]
 
 [ext_resource type="Texture2D" uid="uid://b4rjm07q6s7jc" path="res://icon.svg" id="1_qau18"]
-[ext_resource type="Script" uid="uid://bqt3k21vysvt2" path="res://Scripts/button.cs" id="2_db7pa"]
+[ext_resource type="Script" uid="uid://bqt3k21vysvt2" path="res://Scripts/Clicker.cs" id="2_db7pa"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qau18"]
 

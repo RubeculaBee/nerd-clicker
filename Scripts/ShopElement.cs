@@ -4,14 +4,22 @@ using Godot.Collections;
 
 public partial class ShopElement : PanelContainer
 {
+    // --- Data ---
+    int purchaseCount = 0;
+    // --- END ---
+
+    // --- Exports ---
     [Export]
     int price;
     [Export]
     string name;
     [Export]
     string description;
+    // --- END ---
 
+    // --- Nodes ---
     Dictionary<string, Label> labels;
+    // --- END ---
 
     public override void _Ready()
     {
@@ -20,6 +28,7 @@ public partial class ShopElement : PanelContainer
         SetLabels();
     }
 
+    // --- Helper methods --- 
     private void SetLabels()
     {
         labels = new Dictionary<string, Label>
@@ -33,6 +42,11 @@ public partial class ShopElement : PanelContainer
         labels["Name"].Text = name;
         labels["Description"].Text = description;
         labels["Price"].Text = $"{price}P";
-        labels["Purchases"].Text = "0x";
+        labels["Purchases"].Text = $"{purchaseCount}x";
     }
+    // --- END ---
+
+    // --- Signal Callbacks ---
+    
+    // --- END ---
 }

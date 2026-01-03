@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://brvlvtaugqovy"]
+[gd_scene load_steps=5 format=3 uid="uid://brvlvtaugqovy"]
 
 [ext_resource type="Script" uid="uid://br0onqcft4ujo" path="res://Scripts/GameManager.cs" id="1_3dryh"]
 [ext_resource type="PackedScene" uid="uid://i62fyufc57ik" path="res://Scenes/clicker_button.tscn" id="1_ebmjs"]
 [ext_resource type="Theme" uid="uid://bygmyjhubokqk" path="res://Themes/Mathmatica.tres" id="2_qxrlw"]
-[ext_resource type="Script" uid="uid://bu64liwti4amd" path="res://Scripts/ScoreManager.cs" id="3_wrm1d"]
 [ext_resource type="PackedScene" uid="uid://bmwtj535linl0" path="res://Scenes/shop.tscn" id="5_wowpa"]
 
 [node name="Game" type="Node"]
@@ -30,7 +29,6 @@ offset_right = 388.0
 offset_bottom = 145.0
 theme = ExtResource("2_qxrlw")
 text = "Points: 0"
-script = ExtResource("3_wrm1d")
 
 [node name="Key" type="Label" parent="."]
 offset_right = 40.0
