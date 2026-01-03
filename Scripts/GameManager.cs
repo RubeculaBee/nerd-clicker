@@ -4,12 +4,13 @@ using System;
 public partial class GameManager : Node
 {
     // --- Nodes ---
-    Clicker ClickerButton;
-    Label ScoreDisplay;
+    Clicker clickerButton;
+    Label scoreDisplay;
+    Shop shop;
     // --- END ---
 
     // --- Data ---
-    int points = 0;
+    
     // --- END ---
 
     // --- Virtuals ---
@@ -31,15 +32,16 @@ public partial class GameManager : Node
     // --- Helpers --- 
     private void GetNodes()
     {
-        ClickerButton = GetNode<Clicker>("ClickerButton");
-        ScoreDisplay = GetNode<Label>("Points");
+        clickerButton = GetNode<Clicker>("ClickerButton");
+        scoreDisplay = GetNode<Label>("Points");
+        shop = GetNode<Shop>("Shop");
     }
 
     private void CalculateScore()
     {
-        points = ClickerButton.Clicks();
+        shop.points = clickerButton.Clicks();
 
-        ScoreDisplay.Text = $"Points: {points}";
+        scoreDisplay.Text = $"Points: {shop.points}";
     }
     // --- END ---
 }

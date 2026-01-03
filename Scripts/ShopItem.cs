@@ -2,7 +2,7 @@ using System;
 using Godot;
 using Godot.Collections;
 
-public partial class ShopElement : PanelContainer
+public partial class ShopItem : PanelContainer
 {
     // --- Data ---
     int purchaseCount = 0;

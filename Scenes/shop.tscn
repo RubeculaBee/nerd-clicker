@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmwtj535linl0"]
+[gd_scene load_steps=4 format=3 uid="uid://bmwtj535linl0"]
 
 [ext_resource type="Theme" uid="uid://bygmyjhubokqk" path="res://Themes/Mathmatica.tres" id="1_2shtd"]
-[ext_resource type="PackedScene" uid="uid://b0mj5457tak5h" path="res://Scenes/shop_element.tscn" id="1_a0mxf"]
+[ext_resource type="PackedScene" uid="uid://b0mj5457tak5h" path="res://Scenes/shop_item.tscn" id="1_a0mxf"]
+[ext_resource type="Script" uid="uid://k8uenqln0g56" path="res://Scripts/Shop.cs" id="2_io27d"]
 
 [node name="Shop" type="VBoxContainer"]
 offset_right = 449.0
 offset_bottom = 648.0
 theme = ExtResource("1_2shtd")
+script = ExtResource("2_io27d")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 custom_minimum_size = Vector2(0, 64)
@@ -21,12 +23,12 @@ horizontal_alignment = 1
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+[node name="Items" type="VBoxContainer" parent="ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="ShopElement" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
+[node name="ShopItem" parent="ScrollContainer/Items" instance=ExtResource("1_a0mxf")]
 layout_mode = 2
-price = 20
-name = "Clicks"
-description = "Pull yourself up by your bootstraps."
+price = null
+name = &"ShopItem"
+description = null
