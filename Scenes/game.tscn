@@ -1,32 +1,33 @@
-[gd_scene load_steps=5 format=3 uid="uid://brvlvtaugqovy"]
+[gd_scene load_steps=6 format=3 uid="uid://brvlvtaugqovy"]
 
 [ext_resource type="Script" uid="uid://br0onqcft4ujo" path="res://Scripts/GameManager.cs" id="1_3dryh"]
 [ext_resource type="PackedScene" uid="uid://i62fyufc57ik" path="res://Scenes/clicker_button.tscn" id="1_ebmjs"]
 [ext_resource type="Theme" uid="uid://bygmyjhubokqk" path="res://Themes/Mathmatica.tres" id="2_qxrlw"]
 [ext_resource type="Script" uid="uid://bu64liwti4amd" path="res://Scripts/ScoreManager.cs" id="3_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://bmwtj535linl0" path="res://Scenes/shop.tscn" id="5_wowpa"]
 
 [node name="Game" type="Node"]
 script = ExtResource("1_3dryh")
 
 [node name="ClickerButton" parent="." instance=ExtResource("1_ebmjs")]
-offset_left = 507.0
-offset_top = 239.0
-offset_right = 635.0
-offset_bottom = 367.0
+offset_left = 265.0
+offset_top = 307.0
+offset_right = 393.0
+offset_bottom = 435.0
 
 [node name="Score Equation" type="Label" parent="."]
-offset_left = 462.0
-offset_top = 508.0
-offset_right = 680.0
-offset_bottom = 596.0
+offset_left = 277.0
+offset_top = 571.0
+offset_right = 399.0
+offset_bottom = 613.0
 theme = ExtResource("2_qxrlw")
 text = "P(c) = c"
 
 [node name="Points" type="Label" parent="."]
-offset_left = 438.0
-offset_top = 28.0
-offset_right = 702.0
-offset_bottom = 116.0
+offset_left = 265.0
+offset_top = 103.0
+offset_right = 388.0
+offset_bottom = 145.0
 theme = ExtResource("2_qxrlw")
 text = "Points: 0"
 script = ExtResource("3_wrm1d")
@@ -39,3 +40,7 @@ text = "Key
 ---------
 P: Points
 c: Clicks"
+
+[node name="Shop" parent="." instance=ExtResource("5_wowpa")]
+offset_left = 703.0
+offset_right = 1152.0

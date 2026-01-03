@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmwtj535linl0"]
+
+[ext_resource type="Theme" uid="uid://bygmyjhubokqk" path="res://Themes/Mathmatica.tres" id="1_2shtd"]
+[ext_resource type="PackedScene" uid="uid://b0mj5457tak5h" path="res://Scenes/shop_element.tscn" id="1_a0mxf"]
+
+[node name="Shop" type="VBoxContainer"]
+offset_right = 449.0
+offset_bottom = 648.0
+theme = ExtResource("1_2shtd")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer"]
+layout_mode = 2
+text = "Store"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ShopElement" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
+layout_mode = 2
+
+[node name="ShopElement2" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
+layout_mode = 2
+
+[node name="ShopElement3" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
+layout_mode = 2
+
+[node name="ShopElement4" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
+layout_mode = 2
+
+[node name="ShopElement5" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
+layout_mode = 2
+
+[node name="ShopElement6" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
+layout_mode = 2
+
+[node name="ShopElement7" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
+layout_mode = 2

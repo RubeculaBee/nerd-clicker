@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0mj5457tak5h"]
+
+[ext_resource type="Texture2D" uid="uid://b4rjm07q6s7jc" path="res://icon.svg" id="1_3d55n"]
+[ext_resource type="Theme" uid="uid://bygmyjhubokqk" path="res://Themes/Mathmatica.tres" id="1_3qh1p"]
+[ext_resource type="Script" uid="uid://bx0xvl1fefwxf" path="res://Scripts/ShopElement.cs" id="2_25qdl"]
+
+[node name="ShopElement" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -780.0
+offset_bottom = -560.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_3qh1p")
+script = ExtResource("2_25qdl")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_3d55n")
+expand_mode = 2
+
+[node name="Name-Descirption" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Name" type="Label" parent="HBoxContainer/Name-Descirption"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Item Name"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="HBoxContainer/Name-Descirption"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Lorem Ipsum Dolar Sit amet something something"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Price-Purchases" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Price" type="Label" parent="HBoxContainer/Price-Purchases"]
+layout_mode = 2
+text = "000P"
+horizontal_alignment = 1
+
+[node name="Purchases" type="Label" parent="HBoxContainer/Price-Purchases"]
+layout_mode = 2
+text = "x0"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2

@@ -1,4 +1,7 @@
-[gd_resource type="Theme" format=3 uid="uid://bygmyjhubokqk"]
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bygmyjhubokqk"]
+
+[ext_resource type="FontFile" uid="uid://dlvhnff0b0hph" path="res://Fonts/cmunrm.ttf" id="1_3s8v2"]
 
 [resource]
-default_font_size = 64
+default_font = ExtResource("1_3s8v2")
+default_font_size = 32
