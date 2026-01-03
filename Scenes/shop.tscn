@@ -27,21 +27,6 @@ size_flags_horizontal = 3
 
 [node name="ShopElement" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
 layout_mode = 2
-
-[node name="ShopElement2" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
-layout_mode = 2
-
-[node name="ShopElement3" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
-layout_mode = 2
-
-[node name="ShopElement4" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
-layout_mode = 2
-
-[node name="ShopElement5" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
-layout_mode = 2
-
-[node name="ShopElement6" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
-layout_mode = 2
-
-[node name="ShopElement7" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_a0mxf")]
-layout_mode = 2
+price = 20
+name = "Clicks"
+description = "Pull yourself up by your bootstraps."
